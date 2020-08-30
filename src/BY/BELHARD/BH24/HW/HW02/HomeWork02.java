@@ -3,6 +3,9 @@ package BY.BELHARD.BH24.HW.HW02;
 public class HomeWork02 {
 
     public static void main(String[] args) {
+
+        // Задание 1
+
         byte bt = 1;
         short s = 2;
         int i = 3;
@@ -21,7 +24,12 @@ public class HomeWork02 {
         System.out.println("я была буквой " + c + " а стала буквой " + (c = (char) (c-20)));
         System.out.println(d=d*f);
 
+       // задание 2
 
+       int r = 5;
+       final double Pi = 3.1415926536;
+       double lenght = 2*Pi*r;
+       System.out.println("Длина окружности при радиусе " + r + " см, равна " + lenght + " см.");
 
     }
 
