@@ -54,7 +54,7 @@ public class HomeWork02 {
 
         // задание 4
 
-        int salary1 = 500;
+        int salary1 = 1200;
         int salary2 = 1000;
         int salary3 = 5000;
 
