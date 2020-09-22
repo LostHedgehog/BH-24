@@ -17,7 +17,7 @@ public class Task3Solution {
     public static void main(String[] args) {
 
         HashSet<Integer> tst = new HashSet<>();
-        HashSet<Integer> fnz = new HashSet<>();
+        HashSet<Integer> fnz;
 
         for (int z = 0; z < 10; z++) {
             Random random = new Random();
@@ -30,7 +30,7 @@ public class Task3Solution {
 
         Random randomBorder = new Random();
         int border = randomBorder.nextInt(100);
-        System.out.println("Граница отчечения:" + border);
+        System.out.println("Граница отсечения:" + border);
 
 
 
@@ -41,14 +41,8 @@ public class Task3Solution {
 
         public static HashSet<Integer> removeAllOverBorder (HashSet<Integer> set, int border)
         {
-            Iterator<Integer> iterator = set.iterator();
-            while (iterator.hasNext())
-            {
-                Integer number = iterator.next();
-                if (number > border)
-                    iterator.remove();
-            }
-            return (HashSet)set;
+            set.removeIf(number -> number > border);
+            return set;
         }
 
 
